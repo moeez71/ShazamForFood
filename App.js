@@ -6,6 +6,9 @@
  import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 import Pantry from "./pantry"
+import Recipe from "./recipe"
+
+import Naviagtor_m6 from "./recipe_nav_m6"
 
  const Tab = createMaterialBottomTabNavigator();
 
@@ -40,7 +43,7 @@ function MyTabs() {
       barStyle = {{backgroundColor: '#b0c4de',}}
     >
       <Tab.Screen name="Pantry List" component={Pantry} />
-      <Tab.Screen name="Nearby Places" component={SettingsScreen} />
+      <Tab.Screen name="Nearby Places" component={Naviagtor_m6} />
     </Tab.Navigator>
   );
 }
